@@ -1,0 +1,250 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #0b131e;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0b131e;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #202b3b;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.constainer {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  overflow-x: hidden !important;
+}
+
+.aside-container {
+  width: 60%;
+  padding-right: 70px;
+  padding-left: 30px;
+}
+.aside-container .weather-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  margin-bottom: 100px;
+  margin-top: 30px;
+}
+.aside-container .weather-container .left {
+  font-family: poppins, sans-serif;
+  font-size: 20px;
+  color: #fff;
+}
+.aside-container .weather-container .right img {
+  width: 200px;
+  height: 200px;
+  margin-top: 50px;
+}
+
+.hourly-container {
+  width: 103%;
+  background-color: #202b3b;
+  height: 300px;
+  border-radius: 30px;
+  box-sizing: border-box;
+  position: relative;
+  padding: 5px 30px;
+}
+.hourly-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  height: 230px;
+  margin-top: -10px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.hourly-card-container::-webkit-scrollbar {
+  width: 10px;
+}
+.hourly-card-container::-webkit-scrollbar:horizontal {
+  height: 7px;
+}
+.hourly-card-container::-webkit-scrollbar-track {
+  background-color: rgba(204, 204, 204, 0.3);
+  border-radius: 10px;
+}
+.hourly-card-container::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(204, 204, 204, 0.5);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.input{
+  width: 150% !important;
+}
+
+/* width */
+
+.card {
+  height: 200px;
+  min-width:110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+  position: relative;
+  color: #fff;
+  font-family: poppins, sans-serif;
+  border-right: 1px solid gray;
+  padding-right: 15px;
+}
+.card:last-child {
+  border-right: none;
+}
+.card span {
+  color: gray;
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+}
+.card i:nth-child(2) {
+  font-size: 70px;
+  margin-top: 15px !important;
+  margin-bottom: 10px;
+}
+.hourly-container p {
+  font-size: 20px;
+  color: #fff;
+  font-family: poppins, sans-serif;
+  font-weight: 700;
+}
+
+.aside-container form {
+  width: 100%;
+}
+.aside-container form input {
+  width: 100%;
+  height: 40px;
+  padding-left: 30px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: #202b3b;
+  color: #fff;
+}
+.aside-container form input::placeholder {
+  color: #fff;
+  font-size: 14px;
+  font-family: poppins, sans-serif;
+  letter-spacing: 1px;
+}
+.aside-container form input:focus {
+  border: 2px solid gray;
+}
+
+
+.condition-conatainer {
+  background-color: #202b3b;
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 10px 25px;
+  color:#fff;
+}
+.condition-conatainer p{
+  font-size: 20px;
+  color: #fff;
+  font-family: poppins, sans-serif;
+  font-weight: 700;
+}
+.top{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.top h1{
+  font-size: 35px;
+}
+.text-container{
+  text-align: center;
+}
+
+.text{
+  display: flex;
+  align-items: center;
+}
+.text p{
+  color: gray;
+  font-weight: 400;
+  font-family: poppins,sans-serif;
+}
+.text i{
+  margin-right: 5px;
+  font-size: 20px;
+  color: gray;
+}
+
+.daily-forecast-container {
+  background-color: #202b3b;
+  width: 40%;
+  border-radius: 20px;
+  padding: 10px 40px;
+  box-sizing: border-box;
+  margin-top: 55px;
+}
+.daily-forecast-container p{
+  font-size: 20px;
+  color: #fff;
+  font-family: poppins, sans-serif;
+  font-weight: 700;
+}
+.day-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(179, 179, 179, 0.226);
+  padding-bottom: 25px;
+  margin-top: 35px;
+}
+.day-container:last-child{
+  border: none;
+}
+.day-container p:nth-child(1){
+  color:gray;
+  font-weight: 500;
+}
+.day-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+  width: 100%;
+  /* padding-left: 60px; */
+
+}
+.day-icon img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+.d-none{
+ display: none;
+} 
